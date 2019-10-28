@@ -24,19 +24,14 @@
        const hr = document.querySelector("#hr");
        const mn = document.querySelector("#mn");
        const sc = document.querySelector("#sc");
-        
         setInterval(() => {
             let day = new Date();
-            // alert('Date() - '+day);
             let hh = day.getHours() *30;
-            // alert('hh - '+hh);
             let mm = day.getMinutes() * deg;
             let ss = day.getSeconds() * deg;
             hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-            // alert('hr.style.transform - '+`rotateZ(${hh+(mm/12)}deg)`);
             mn.style.transform = `rotateZ(${mm}deg)`;
             sc.style.transform = `rotateZ(${ss}deg)`;
-            // alert('sec - '+sc.style.transform);
               
         })
 
